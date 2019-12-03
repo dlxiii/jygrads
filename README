@@ -1,0 +1,39 @@
+=======================================================
+JyGrADS - A Bridge for Interfacing Java/Matlab to GrADS
+=======================================================
+
+Author:
+   Arlindo da Silva <dasilva@opengrads.org>
+License:
+   GNU Public License Version 2
+
+Overview
+========
+
+This package provides a bridge to interface Java and Matlab to GrADS.
+
+
+Useful Links
+============
+
+.. _Basemaps: http://www.scipy.org/Cookbook/Matplotlib/Maps
+.. _GrADS: http://grads.iges.org/grads
+.. _Installation: http://docs.python.org/inst/inst.html
+.. _IPython: http://ipython.scipy.org/moin/
+.. _Jython: http://www.jython.org/
+.. _Matplotlib: http://matplotlib.sourceforge.net/
+.. _NumPy: http://numpy.scipy.org/ 
+.. _OpenGrADS: http://opengrads.org
+.. _PIL: http://www.pythonware.com/products/pil/
+.. _PyGrADS: http://opengrads.org/wiki/index.php?title=Python_Interface_to_GrADS
+.. _Python: http://www.python.org
+  
+Installation
+============
+
+See file INSTALL.
+
+License Terms
+=============
+
+See file COPYING.

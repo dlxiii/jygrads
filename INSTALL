@@ -1,0 +1,96 @@
+=======================================================
+JyGrADS - A Bridge for Interfacing Java/Matlab to GrADS
+=======================================================
+
+Author:
+   Arlindo da Silva <dasilva@opengrads.org>
+License:
+   GNU Public License Version 2
+
+Installation in Matlab
+----------------------
+
+You need to run Matlab with the Java Virtual Machine (JVM). You will
+need the following files:
+
+::
+     grads.m
+     examples.m
+     jygrads-superpack.jar
+
+Put *grads.m* in a place MATLAB can find it, say $HOME/.matlab; the script
+*example.m* shows basic usage.
+
+The Java archive *jygrads-superpack.jar* contains PyGrADS and the all
+necessary Jython engine and packages. In order to use this Java
+archive you need to set your *classpath.txt* file so that Matlab can
+find it.
+
+I suggest you set your static Java path. Quoting from the Malab FAQ:
+
+   MATLAB loads the static class path from the classpath.txt file at
+   the start of each session. The static path offers better class
+   loading performance than the dynamic path. However, to modify the
+   static path, you need to edit classpath.txt, and then restart
+   MATLAB.
+
+   *Finding and Editing classpath.txt.* The default classpath.txt file
+   resides in the toolbox\local subdirectory of your MATLAB root
+   directory matlabroot:
+
+::
+   [matlabroot '\toolbox\local\classpath.txt']
+   ans = /opt/matlab/toolbox/local/classpath.txt
+
+   To make changes in the static path that affect all users who share
+   this same MATLAB root directory, edit this file in
+   toolbox\local. If you want to make changes that do not affect
+   anyone else, copy classpath.txt to your own startup directory and
+   edit the file there. When MATLAB starts up, it looks for
+   classpath.txt first in your startup directory, and then in the
+   default location. It uses the first file it finds.
+
+   To see which classpath.txt file is currently being used by your
+   MATLAB environment, use the which function:
+
+::
+    >> which classpath.txt
+
+    To edit either the default file or the copy in your own directory,
+    type:
+
+::
+    >> edit classpath.txt
+
+    All you need to do is to add a line at the end of your
+    *classpath.txt* file with the full path name of your jygrads
+    archive, e.g.,
+
+::
+    /home/joe/.matlab/jar/jygrads-superpack.jar
+
+    IMPORTANT: MATLAB reads classpath.txt only at startup. If you edit
+    classpath.txt or change your .class files while MATLAB is running,
+    you must restart MATLAB to put those changes into effect.
+
+Detailed instructions can be found here:
+
+::
+   http://www.mathworks.com/access/helpdesk/help/techdoc/index.html?/access/helpdesk/help/techdoc/matlab_external/f4863.html#f4867
+
+
+Useful Links
+============
+
+.. _Basemaps: http://www.scipy.org/Cookbook/Matplotlib/Maps
+.. _GrADS: http://grads.iges.org/grads
+.. _Installation: http://docs.python.org/inst/inst.html
+.. _IPython: http://ipython.scipy.org/moin/
+.. _Jython: http://www.jython.org/
+.. _Matplotlib: http://matplotlib.sourceforge.net/
+.. _NumPy: http://numpy.scipy.org/ 
+.. _OpenGrADS: http://opengrads.org
+.. _PIL: http://www.pythonware.com/products/pil/
+.. _PyGrADS: http://opengrads.org/wiki/index.php?title=Python_Interface_to_GrADS
+.. _Python: http://www.python.org
+
